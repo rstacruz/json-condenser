@@ -1,6 +1,6 @@
 {
   "name": "json-condenser",
-  "description": "Condenses JSON by shortening literals.",
+  "description": "Condenses JSON by shortening literals",
   "version": "1.0.0",
   "author": "Rico Sta. Cruz <rico@ricostacruz.com> (http://ricostacruz.com)",
   "bugs": {

@@ -1,6 +1,8 @@
 # json-condenser
 
-Condenses JSON by shortening literals and numbers.
+> Condenses JSON by shortening literals and numbers
+
+json-condenser makes JSON shorter but still (kind of) human-readable. Great for embedding JSON data in URLs.
 
 ```js
 const KEYS = ['id', 'name', 'email', 'role', 'admin']
