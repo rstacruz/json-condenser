@@ -8,11 +8,13 @@ let A = 'a'.charCodeAt(0)
  */
 
 function condense (keys, json) {
+  json = json
+    .replace(new RegExp('"(\\d+)":', 'g'), '$1:')
   return keys.reduce(function (json, key, idx) {
     var char = getLetter(idx)
     return json
       .replace(new RegExp('' + JSON.stringify(key) + ':', 'g'), char + ':')
-      .replace(new RegExp('([:,\[])' + JSON.stringify(key), 'g'), '$1' + char)
+      .replace(new RegExp('([:,\\[])' + JSON.stringify(key), 'g'), '$1' + char)
     return json
   }, json)
 }
@@ -25,11 +27,13 @@ function condense (keys, json) {
  */
 
 function expand (keys, json) {
+  json = json
+    .replace(new RegExp('([{,])(\\d+):', 'g'), '$1"$2":')
   return keys.reduce(function (json, key, idx) {
     var char = getLetter(idx)
     return json
       .replace(new RegExp('' + char + ':', 'g'), JSON.stringify(key) + ':')
-      .replace(new RegExp('([:,\[])' + char, 'g'), '$1' + JSON.stringify(key))
+      .replace(new RegExp('([:,\\[])' + char, 'g'), '$1' + JSON.stringify(key))
   }, json)
 }
 
