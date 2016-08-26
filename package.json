@@ -1,15 +1,27 @@
 {
   "name": "json-condenser",
-  "version": "1.0.0",
   "description": "Condenses JSON by shortening literals.",
-  "main": "index.js",
-  "scripts": {
-    "test": "tape test.js"
-  },
-  "keywords": [],
+  "version": "1.0.0",
   "author": "Rico Sta. Cruz <rico@ricostacruz.com> (http://ricostacruz.com)",
-  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rstacruz/json-condenser/issues"
+  },
   "devDependencies": {
     "tape": "4.6.0"
+  },
+  "homepage": "https://github.com/rstacruz/json-condenser#readme",
+  "keywords": [
+    "compress",
+    "condense",
+    "json"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rstacruz/json-condenser.git"
+  },
+  "scripts": {
+    "test": "tape test.js"
   }
 }
