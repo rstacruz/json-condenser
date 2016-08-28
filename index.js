@@ -1,4 +1,4 @@
-let A = 'a'.charCodeAt(0)
+var A = 'a'.charCodeAt(0)
 
 /**
  * Condenses `json` based on `keys`.
